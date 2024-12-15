@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations and Hours - UW Madison Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="location-page">
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo_clean.png" alt="University Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="location-and-hours.html">Locations and Hours</a></li>
+                    <li><a href="event-page.html">Events Page</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="hero">
+        <h1>Locations and Hours</h1>
+        <div class="libraries">
+            <div class="library-item" onclick="toggleLibraryDetails('Memorial')">Memorial Library</div>
+            <div id="Memorial" class="library-details">
+                <p>Location: 123 Main St, Madison, WI</p>
+                <p>Hours: 9 AM - 6 PM</p>
+                <p>Contact: 123-456-7890</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('College')">College Library</div>
+            <div id="College" class="library-details">
+                <p>Location: 456 Elm St, Madison, WI</p>
+                <p>Hours: 8 AM - 5 PM</p>
+                <p>Contact: 234-567-8901</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Steenbock')">Steenbock Library</div>
+            <div id="Steenbock" class="library-details">
+                <p>Location: 789 Oak St, Madison, WI</p>
+                <p>Hours: 9:30 AM - 4 PM</p>
+                <p>Contact: 345-678-9012</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Ebling')">Ebling Library</div>
+            <div id="Ebling" class="library-details">
+                <p>Location: 101 Pine St, Madison, WI</p>
+                <p>Hours: 9 AM - 7 PM</p>
+                <p>Contact: 456-789-0123</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Law')">Law Library</div>
+            <div id="Law" class="library-details">
+                <p>Location: 202 Maple St, Madison, WI</p>
+                <p>Hours: 7:30 AM - Midnight</p>
+                <p>Contact: 567-890-1234</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Kohler')">Kohler Art Library</div>
+            <div id="Kohler" class="library-details">
+                <p>Location: 202 Maple St, Madison, WI</p>
+                <p>Hours: 7:30 AM - Midnight</p>
+                <p>Contact: 567-890-1234</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Social Work')">Social Work Library</div>
+            <div id="Social Work" class="library-details">
+                <p>Location: 202 Maple St, Madison, WI</p>
+                <p>Hours: 7:30 AM - Midnight</p>
+                <p>Contact: 567-890-1234</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Chemistry')">Chemistry Library</div>
+            <div id="Chemistry" class="library-details">
+                <p>Location: 202 Maple St, Madison, WI</p>
+                <p>Hours: 7:30 AM - Midnight</p>
+                <p>Contact: 567-890-1234</p>
+            </div>
+
+            <div class="library-item" onclick="toggleLibraryDetails('Business')">Business Library</div>
+            <div id="Business" class="library-details">
+                <p>Location: 303 Cedar St, Madison, WI</p>
+                <p>Hours: 8 AM - 6 PM</p>
+                <p>Contact: 678-901-2345</p>
+            </div>
+        </div>
+       
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

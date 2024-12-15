@@ -1,0 +1,376 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background-color: #990000; /* University red */
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar .logo img {
+    height: 70px; /* Increase size */
+    margin-right: 15px;
+    margin-left: -72px; /* Move it slightly to the left */
+    vertical-align: middle;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #990000; /* University red */
+    color: white;
+    min-height: 100vh;
+}
+
+.hero .content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Accent color */
+    color: #990000;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero .image img {
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+.info-box {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.info-box-content {
+    background-color: white;
+    padding: 20px;
+    max-width: 700px; /* Increase the width here as needed */
+    border-radius: 8px;
+    text-align: center;
+    color: black; /* Ensure text is visible */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* Location and Hours Page */
+.location-page .hero {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align to the left */
+    padding: 20px;
+    background-color: #990000; /* University red */
+    color: white;
+    min-height: 100vh;
+    text-align: left; /* Align text to the left */
+    font-size: 0.6rem; /* Smaller font size */
+    margin-bottom: 0px; /* Adjust spacing below the title */
+
+}
+
+.libraries {
+    display: flex;
+    flex-direction: column; /* Stack tabs vertically */
+    align-items: flex-start; /* Align tabs to the left */
+    width: 300px; /* Limit the width of the tabs */
+    padding-left: 10px; /* Add padding on the left */
+    margin-top: 0; /* Remove any extra space above the tabs */
+    padding-top: 0; /* Ensure no padding is pushing the tabs down */
+}
+
+.library-item {
+    width: 100%; /* Full width within container */
+    max-width: 100%; /* Remove limit on width */
+    margin: 10px 0; /* Spacing between tabs */
+    padding: 10px; /* Reduce padding */
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Smaller font size */
+    text-align: center;
+    color: black; /* Ensure text is black and visible */
+    font-weight: bold;
+}
+
+.library-details {
+    width: 95%; /* Adjust details width */
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: none; /* Hidden by default */
+    color: black; /* Ensure details text is visible */
+    text-align: left;
+    font-size: 1rem; /* Adjust text size */
+}
+
+.hero-content {
+    flex: 1; /* Content on the left */
+}
+
+.hero-image {
+
+    flex: 1; /* Take up the right side */
+    display: flex;
+    justify-content: flex-end; /* Push the image to the right */
+    align-items: flex-start; /* Move the image up to align with the top */
+    margin: 0px; /* Optional: Fine-tune spacing to bring it closer */
+}
+
+.hero-image img {
+    max-width: 40%; /* Scale the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* events page 
+
+/* Controls for Searching and Sorting */
+.event-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.event-controls input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.event-controls button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffcc00;
+    color: #990000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.event-controls button:hover {
+    background-color: #cc3300;
+    color: white;
+}
+
+/* Event Cards */
+.event-card {
+    background-color: white;
+    color: #990000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.event-card h2 {
+    margin-bottom: 10px;
+}
+
+.event-details {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+}
+
+.details-btn, .register-btn {
+    padding: 8px 15px;
+    background-color: #990000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.details-btn:hover, .register-btn:hover {
+    background-color: #cc3300;
+}
+
+
+/* Locations and Hours Page */
+.location-page .hero {
+    display: flex;
+    flex-direction: column; /* Stack title and tabs vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center-align text */
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #990000; /* University red */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+}
+
+.location-page h1 {
+    margin-bottom: 20px; /* Reduce gap between title and tabs */
+    font-size: 2.5rem; /* Adjust title size for better balance */
+}
+
+.location-page .libraries {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    gap: 10px; /* Add small spacing between tabs */
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+}
+
+.location-page .library-item {
+    width: 300px;
+    margin: 5px 0; /* Reduce vertical spacing further */
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.location-page .library-item:hover {
+    background-color: #ffcc00; /* Highlight on hover */
+    color: #990000; /* Text color change */
+    transform: scale(1.05);
+}
+
+
+/* Resources Page - Hero Section */
+.resources-page .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #990000; /* Red background */
+    color: white;
+    min-height: 50vh;
+    padding: 20px;
+}
+
+.resources-page .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.resources-page .hero p {
+    font-size: 1.2rem;
+}
+
+/* Resources Page Content */
+.resources-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resources-content h2 {
+    color: #990000; /* University red */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.resources-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.external-resources {
+    list-style: none;
+    padding: 0;
+}
+
+.external-resources li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.external-resources a {
+    color: #990000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.external-resources a:hover {
+    color: #cc3300; /* Darker red on hover */
+    text-decoration: underline;
+}

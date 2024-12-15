@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page - UW Madison Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="events-page">
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo_clean.png" alt="University Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="location-and-hours.html">Locations and Hours</a></li>
+                    <li><a href="event-page.html">Events Page</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Upcoming Events</h1>
+        <div class="event-controls">
+            <input
+                type="text"
+                id="eventSearch"
+                placeholder="Search for events..."
+                onkeyup="filterEvents()"
+            />
+            <button onclick="sortEvents()">Sort by Date</button>
+        </div>
+        <div id="eventsContainer" class="events-container">
+            <!-- Event Cards -->
+            <div class="event-card">
+                <h2>Workshop: Research Tips</h2>
+                <p><strong>Date:</strong> December 10, 2024</p>
+                <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                <p><strong>Location:</strong> Memorial Library, Room 205</p>
+                <button class="details-btn" onclick="toggleDetails(this)">View Details</button>
+                <div class="event-details">
+                    <p>Learn valuable tips for conducting academic research effectively. Perfect for students working on papers and projects!</p>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <h2>Author Meet & Greet: Jane Smith</h2>
+                <p><strong>Date:</strong> December 15, 2024</p>
+                <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                <p><strong>Location:</strong> College Library, Room 101</p>
+                <button class="details-btn" onclick="toggleDetails(this)">View Details</button>
+                <div class="event-details">
+                    <p>Meet bestselling author Jane Smith and get your books signed during this special event.</p>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <h2>Finals Study Night</h2>
+                <p><strong>Date:</strong> December 20, 2024</p>
+                <p><strong>Time:</strong> 8:00 PM - Midnight</p>
+                <p><strong>Location:</strong> Steenbock Library</p>
+                <button class="details-btn" onclick="toggleDetails(this)">View Details</button>
+                <div class="event-details">
+                    <p>Enjoy a quiet and productive study space with free coffee and snacks to help you prepare for finals.</p>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
